@@ -4,6 +4,7 @@
 
 # Site
 title: Apollo React Guide
+seotitle: GraphQL with React
 subtitle: React Guide
 description: A guide to using the Apollo GraphQL Client with React.
 author:
@@ -40,7 +41,7 @@ typescript_api_box:
 
 social_links:
   github: 'https://github.com/apollostack'
-  twitter: '@apollostack'
+  twitter: '@apollographql'
 
 # API keys
 apis:
