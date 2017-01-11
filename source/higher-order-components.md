@@ -112,6 +112,19 @@ const MyComponentWithUpvote = graphql(Upvote, {
 // MyComponentWithUpvote.getWrappedInstance() returns MyComponent instance
 ```
 
+If you use `withApollo`, you can give `withRef` as its second parameter to access to the instance of the wrapped component.
+
+```js
+import React, { Component } from 'react';
+import { withApollo } from 'react-apollo';
+
+class MyComponent extends Component { ... }
+
+const MyComponentWithApollo = withApollo(MyComponent, { withRef: true });
+
+// MyComponentWithApollo.getWrappedInstance() returns MyComponent instance
+```
+
 <h2 id='compose'>compose</h2>
 
 `react-apollo` exports a `compose` function. Adopting the following pattern allows you to reduce the number of reassignments you're doing every time you wrap your component with `graphql` and often `connect` from `react-redux`. 
